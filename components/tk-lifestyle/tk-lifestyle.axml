@@ -1,0 +1,8 @@
+<view>
+  <view  a:if="{{publicId && showLife}}" class="life-bottom" >
+    <view class="life-close" onTap="closeLife">
+      <image mode="scaleToFill" src="/images/life_close.png"/>
+    </view>
+    <lifestyle a:if="{{publicId}}" publicId="{{publicId}}" onFollow="onFollow"/>  
+  </view>
+</view>

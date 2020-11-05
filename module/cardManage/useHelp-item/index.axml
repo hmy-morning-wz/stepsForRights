@@ -1,0 +1,22 @@
+<view class="help-item-modal">
+  <block a:for="{{helpData}}">
+    <view class="item-modal">
+      <view class="item-modal-title {{item.opened ? 'opened' : ''}}" onTap="onTap" data-index="{{index}}" data-opened="{{item.opened}}">
+        <view class="item-left">{{index+1}}.                          
+        </view>
+        <view class="title">           {{item.title}}                                                              
+        </view>
+        <view class="info">
+          <view class="icon {{item.opened ? 'to-bottom' : 'to-right'}}">
+          </view>
+        </view>
+      </view>
+      <view a:if="{{item.opened}}" class="item-modal-content">
+        <view class="item-left">答:              
+        </view>
+        <view class="content">   {{item.content}}                                                                    
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,31 @@
+<view a:if="{{list.length > 0}}">
+  <view class="main">
+    <scroll-view scroll-y="{{true}}" onScrollToLower="onScrollToLower" class="schedule-scroll" lower-threshold="60">
+      <view class="content" a:for="{{list}}" onTap="handleJump" data-seed="权益跳转" data-obj="{{item}}" data-id="{{item.id}}" data-type="{{item.type}}"  data-linkUrl="{{item.content}}">
+        <view class="left">
+          <view class="prizeName">{{item.prizeName}}</view>
+          <view class="steps-line">
+            <view>{{item.gmtCreate}}</view>
+            <image mode="scaleToFill" src="https://images.allcitygo.com/20201029110839364eyxZDH.png"/>
+            <view>
+              {{item.useSteps}}
+            </view>
+          </view>
+        </view>
+        <view class="right">
+          <!-- <image mode="scaleToFill" src="https://images.allcitygo.com/20201029111404945SJb6X7.png"/> -->
+        </view>
+      </view>
+      <view class="spinner" style="{{loadShow ? '' : 'display:none'}}">
+        <view style="margin:20rpx 0 0 20rpx;color:#666666;">加载中...</view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="bottom" a:if="{{loadShow}}">加载更多</view>
+</view>
+<view class="no-data" a:else>
+  <image mode="scaleToFill" src="https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/no-data.png"/>
+  <view>
+      您还没有兑换记录
+  </view>
+</view>

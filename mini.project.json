@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "beforeCompile": "npm run build",
+    "beforePreview": "npm run build",
+    "beforeUpload": "npm run build"
+  },
+  "precompileWatch": {
+    "selfWatch": true,
+    "restart": true,
+    "exclude": [
+      "dist/**",
+      "*.md",
+      "*.log",
+      "*.json"
+    ],
+    "ignoreBuiltInExts": false
+  },
+  "component2": true,
+  "enableParallelLoader": true,
+  "axmlStrictCheck": true,
+  "enableDistFileMinify": true
+}

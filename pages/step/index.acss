@@ -1,0 +1,483 @@
+.bg {
+  background: url("https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/bg.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 867rpx;
+  position: relative;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.circle {
+  width: 202px;
+  height: 202px;
+  text-align: center;
+  margin: 180rpx auto 0;
+  position: relative;
+  overflow: hidden
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 182rpx;
+  left: 24rpx;
+  width: 702rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  background: #2d84ff;
+  border-radius: 41rpx;
+  z-index: 100;
+}
+
+.toast view {
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+  line-height: 72rpx;
+  margin-left: 32rpx;
+}
+
+.toast image {
+  height: 34rpx;
+  width: 34rpx;
+  margin-left: auto;
+  margin-right: 32rpx;
+}
+
+.progress_canvas {
+  width: 202px;
+  height: 202px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.progress_bg {
+  width: 202px;
+  height: 202px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.steps-title {
+  position: relative;
+  z-index: 100;
+  margin: 86rpx auto 0;
+  font-size: 36rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  line-height: 50rpx;
+}
+
+.Unauthorized {
+  position: relative;
+  z-index: 100;
+  width: 268rpx;
+  height: 78rpx;
+  background: linear-gradient(180deg, #ffc402, #ff8602);
+  border-radius: 39rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 78rpx;
+  text-shadow: 0rpx 1px 4rpx 0px rgba(89, 47, 2, 0.4);
+  margin: 30rpx auto 25rpx;
+}
+
+.step {
+  font-size: 106rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  /* line-height: 148rpx; */
+  margin: 0 auto;
+  text-shadow: 0px 1rpx 10rpx 0rpx rgba(31, 94, 52, 0.4);
+}
+
+.exchange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.exchange view {
+  font-size: 24rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 33rpx;
+}
+
+.exchange image {
+  width: 16rpx;
+  height: 16rpx;
+}
+
+.cpc-banner {
+  width: 702rpx;
+  height: 182rpx;
+  border-radius: 16rpx;
+  margin: 0 auto 40rpx;
+}
+
+.cpc-banner image {
+  display: block;
+  width: 702rpx;
+  height: 182rpx;
+  border-radius: 16rpx;
+}
+
+.mt162 {
+  margin-top: -162rpx !important;
+  position: relative;
+  z-index: 100;
+}
+
+.rights-exchange {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #333436;
+  line-height: 45prx;
+  padding-left: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.picker-city {
+  box-sizing: border-box;
+  min-width: 116rpx;
+  padding: 0 16rpx;
+  height: 42rpx;
+  background: #E5F6FF;
+  border-radius: 21rpx;
+  margin-left: 18rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cityName {
+  font-size: 24rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0077fc;
+  line-height: 33rpx;
+}
+
+.location-city image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+
+.modular {
+  box-sizing: border-box;
+  width: 702rpx;
+  height: 188rpx;
+  background: url('https://images.allcitygo.com/202011031052167529WFZdr.png') no-repeat;
+  background-size: 100% 100%;
+  /* border-radius: 16rpx;
+  box-shadow: 0px 2rpx 14rpx 0rpx rgba(88, 88, 88, 0.16); */
+  margin: 0 auto 24rpx;
+  padding: 0 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.coupon-left {
+  box-sizing: border-box;
+  height: 188rpx;
+  padding-top: 24rpx;
+}
+
+.first-line {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #3d3d3d;
+  line-height: 33rpx;
+  margin-bottom: 14rpx;
+}
+
+.first-line image {
+  display: block;
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 100%;
+  margin-right: 12rpx;
+}
+
+.second-line {
+  font-size: 34rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #3d3d3d;
+  line-height: 48rpx;
+  margin-bottom: 2rpx;
+}
+
+.third-line {
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #cc914d;
+  line-height: 40rpx;
+}
+
+.first-line view, .second-line, .third-line {
+  width: 390rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.receive {
+  width: 170rpx;
+  height: 60rpx;
+  background: linear-gradient(180deg, #ff8602, #fec102);
+  border-radius: 32rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.received {
+  background: #c4b49e;
+}
+
+.flot-entrance {
+  position: absolute;
+  right: 0;
+  top: 522rpx;
+  z-index: 100;
+  width: 120rpx;
+  height: 54rpx;
+  opacity: 0.3;
+  background: #064e1a;
+  border-radius: 16rpx 0 0 16rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #fef5ef;
+  line-height: 54rpx;
+}
+
+.float-bottom {
+  top: 600rpx !important;
+}
+
+.am-modal-show {
+  z-index: 999;
+}
+
+.succ-pop {
+  position: relative;
+  width: 550rpx;
+  height: 588rpx;
+  background: linear-gradient(180deg, #fffeec, #ffedd5);
+  border-radius: 24rpx;
+}
+
+.pop-close {
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 610rpx;
+  left: 253rpx;
+}
+
+.bus-btn {
+  position: absolute;
+  top: 448rpx;
+  left: 75rpx;
+  width: 400rpx;
+  height: 72rpx;
+  background: linear-gradient(180deg, #ff8902 50%, #febf02 100%);
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 40rpx;
+}
+
+.pop-title {
+  padding-top: 62rpx;
+  font-size: 42rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  text-align: center;
+  color: #c8904c;
+  line-height: 52rpx;
+}
+
+.am-modal-content {
+  padding-top: 0;
+}
+
+.pop-prize {
+  box-sizing: border-box;
+  width: 480rpx;
+  height: 152rpx;
+  margin: 58rpx auto;
+  display: flex;
+  align-items: center;
+}
+
+.prize-bg {
+  background: url('https://images.allcitygo.com/20201030142813551iB73o5.png') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prize-name {
+  width: 196rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #333333;
+  line-height: 45rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.recieve-btn {
+  width: 108rpx;
+  height: 48rpx;
+  background: linear-gradient(180deg, #ff8902, #fea702 100%);
+  border-radius: 24rpx;
+  margin-left: 24rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 48rpx;
+}
+
+.pop-merchantLogo {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 22rpx;
+  border-radius: 100%;
+}
+
+.coupon-bg {
+  background: url('https://images.allcitygo.com/20201030142904937Jl9Isy.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.cou-left {
+  width: 180rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cou-right {
+  padding-left: 36rpx;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.coupon-amt {
+  position: relative;
+  /* top: -10rpx; */
+  font-size: 72rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #ed5c00;
+  line-height: 72rpx;
+}
+
+.coupon-yuan {
+  position: relative;
+  /* top: 10rpx; */
+  font-size: 36rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #ed5c00;
+  line-height: 50rpx;
+  letter-spacing: 1rpx;
+}
+
+.coupon-name {
+  margin-bottom: 4rpx;
+  font-size: 36rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #333333;
+  line-height: 50rpx;
+}
+
+.zddk {
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #cc914d;
+  line-height: 40rpx;
+}
+
+.none-list {
+  padding: 80rpx 0 20rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  text-align: center;
+  color: #c8904c;
+  line-height: 48rpx;
+}
+
+.none-list image {
+  display: block;
+  width: 258rpx;
+  height: 200rpx;
+  margin: 0 auto 30rpx;
+}

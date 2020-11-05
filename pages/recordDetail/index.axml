@@ -1,0 +1,20 @@
+<view class="main">
+  <view class="content">
+    <view class="top">
+      <image class="logo" mode="scaleToFill" src="https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/bg.png"/>
+      <view class="title">
+           厦门地铁体验乘车券兑换码
+      </view>
+    </view>
+    <view class="qrcode">
+      <image src="{{imgSrc}}" mode="aspectFit" />
+    </view>
+    <view class="save"  onTap="handleSave">保存二维码到相册</view>
+  </view>
+  <view class="rule">
+    <view class="explain">使用规则</view>
+    <view class="rule-content">
+      <rich-text nodes="{{rule}}" ></rich-text>
+    </view>
+  </view>
+</view>

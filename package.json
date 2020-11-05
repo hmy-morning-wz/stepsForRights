@@ -1,0 +1,30 @@
+{
+  "name": "freeride",
+  "version": "3.0.1",
+  "description": "",
+  "dependencies": {
+    "@tklc/miniapp-tracker-sdk": "0.0.25",
+    "herculex": "^0.2.13",
+    "mini-ali-ui": "^1.1.2",
+    "mini-antui": "^0.3.12",
+    "qrcode": "^1.4.4",
+    "mini-html-parser2": "^0.2.0"
+  },
+  "devDependencies": {
+    "mini-types": "^0.1.2"
+  },
+  "scripts": {
+    "ainstall": "npm install --registry=https://registry.npm.taobao.org",
+    "gitrev": "git rev-parse --short HEAD",
+    "build": "node ./scripts/beforeCompile.js && node ./scripts/lessCompile.js &&  tsc --types mini-types",
+    "less": "node ./scripts/lessCompile.js",
+    "updateVersion": "node ./scripts/beforeCompile.js",
+    "test": "ts-mocha -p test/tsconfig.json test/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.allcitygo.com:8000/front/webview.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

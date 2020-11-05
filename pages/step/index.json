@@ -1,0 +1,11 @@
+{
+  "pullRefresh": false,
+  "defaultTitle": "步数换乘车券",
+  "titleBarColor": "#108EE9",
+  "barButtonTheme": "light",
+  "transparentTitle": "auto",
+  "usingComponents": {
+    "modal": "mini-ali-ui/es/modal/index",
+    "tk-lifestyle":"/components/tk-lifestyle/tk-lifestyle"
+  }
+}

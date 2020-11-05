@@ -1,0 +1,35 @@
+
+.life-bottom{
+  position: fixed;
+  bottom: 58rpx;
+  width:708rpx;
+  padding-left: 20rpx;
+  margin-left: 11rpx;
+  margin-right: 11rpx;
+  /* height:104rpx; */
+  background:#244480;
+  border-radius:4rpx;
+  /* opacity:0.4; */
+  z-index: 998;
+
+}
+.life-close {
+  position: absolute;
+  width: 66rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.life-close image {
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+}
+lifestyle {
+  background:#244480;
+  border-radius:4rpx;
+  /* opacity:0.4; */
+  color: white;
+  margin-left: 26rpx;
+}

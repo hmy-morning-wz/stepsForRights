@@ -1,0 +1,19 @@
+@charset "utf-8";
+@mixin height($height){
+  height:$height;
+  line-height: $height;
+}
+%fl-left{
+  float:left;
+}
+%fl-right{
+  float:right;
+}
+.clearfix:after{
+  content:'';
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+

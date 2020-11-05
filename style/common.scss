@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+$windowBackgroundColor: #F5F5F5;
+$pagePadding: 32rpx;
+
+$fontColor333: #333;
+$fontColor999: #999;
+$fontColorD8D8D8: #D8D8D8;
+$fontColorEA5305: #EA5305;
+
+$fontColor888: #888;
+$fontColorBlue: #108EE9;
+
+$contentTopBackgroundColor: #29AB91;
+
+$contentTopHeight: 392rpx;
+
+@mixin borderBottomDDD {
+  border-bottom: 1rpx solid #ddd;
+}
+
+@mixin borderTopDDD {
+  border-top: 1rpx solid #ddd;
+}
+
+

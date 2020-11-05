@@ -1,0 +1,6 @@
+<block a:for="{{rightsCardData}}">
+  <view class="rightsbox"> 
+    <image class="detailpicture" src="{{item.imgUrl}}" mode="scaleToFill" />
+     <view class="detailtxt">{{item.title}}</view>
+  </view>
+</block>

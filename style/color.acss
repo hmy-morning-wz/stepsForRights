@@ -1,0 +1,22 @@
+.fontOrange{
+  color: #FF961F;
+}
+.fontRed{
+  color: #FF4854;
+}
+.bg {
+  height: 20rpx;
+}
+
+.bg-gray {
+  background: #f0f0f0;
+  height: 20rpx;
+}
+
+.bgGray {
+  background: #f4f5f7;
+}
+
+.bgBlue{
+  background-color: #378FE1;
+}

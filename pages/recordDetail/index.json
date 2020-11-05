@@ -1,0 +1,10 @@
+{
+  "pullRefresh": false,
+  "defaultTitle": "领取成功",
+  "titleBarColor": "#000",
+   "barButtonTheme": "light", 
+  "transparentTitle": "auto",
+  "usingComponents": {
+  
+  }
+}

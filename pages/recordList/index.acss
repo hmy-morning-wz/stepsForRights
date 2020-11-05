@@ -1,0 +1,131 @@
+.main {
+  position: relative;
+  height: 1600rpx;
+}
+
+.schedule-scroll {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 160rpx;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.content::after {
+  content: "";
+  height: 1rpx;
+  background-color: #E5E5E5;
+  position: absolute;
+  left: 32rpx;
+  width: 686rpx;
+  bottom: 0;
+}
+
+.prizeName {
+  margin-bottom: 9rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  line-height: 40rpx;
+}
+.steps-line {
+  display: flex;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0,0,0,0.3);
+  line-height: 32rpx;
+}
+.steps-line image {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 18rpx;
+  margin-right: 6rpx;
+}
+
+.right {
+  background: url("https://images.allcitygo.com/20201029111404945SJb6X7.png") no-repeat;
+  background-size: 100% 100%;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.spinner {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner .spinner-word {
+  margin-top: 24rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.schedule-scroll {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.addContainer1 {
+  width: 702rpx;
+  margin-top: 170rpx;
+  margin-left: 24rpx;
+}
+
+.bottom {
+  text-align: center;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #b2b2b2;
+  line-height: 32rpx;
+  margin: 41rpx auto;
+}
+
+.no-data {
+  overflow: hidden;
+  position: relative;
+}
+
+.no-data image {
+  display: block;
+  width: 500rpx;
+  height: 250rpx;
+  margin: 288rpx auto 40rpx;
+}
+
+.no-data view {
+  width: 208rpx;
+  height: 37rpx;
+  opacity: 0.65;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #0080ff;
+  line-height: 37rpx;
+  margin: 0 auto;
+}

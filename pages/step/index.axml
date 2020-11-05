@@ -1,0 +1,129 @@
+<view class="main">
+  <view class="bg">
+    <view class="toast" a:if="{{toast}}">
+      <view>打开手机步数同步开关，让数据更准确。</view>
+      <image onTap="handleClsoe" mode="scaleToFill" src="https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/close.png"/>
+    </view>
+    <view class="circle">
+      <view>
+        <view class="steps-title">
+          今日步数
+        </view>
+        <view class="step" a:if="{{authorization}}">{{currentStep}}</view>
+        <view a:else class="Unauthorized" onTap="handleAuthorization" data-seed="开启步数授权">
+          <view>{{UnauthorizedCopy}}</view>
+        </view>
+        <view a:if="{{minStep}}" class="exchange">
+          <view>
+            满{{minStep}}步可兑换
+          </view>
+        </view>
+        <view a:else class="exchange" onTap="handleRecord">
+          <view>步数兑换记录</view>
+          <image mode="scaleToFill" src="https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/arrow.png"/>
+        </view>
+      </view>
+      <canvas class="progress_bg" id="canvasProgressbg"></canvas>
+      <canvas class="progress_canvas" id="canvasProgress"></canvas>
+    </view>
+  </view>
+  <view class="mt162">
+    <view class="cpc-banner" a:if="{{banner.length > 0}}">
+      <swiper indicator-dots="{{banner.length == 1 ? false: true}}" autoplay>
+        <block a:for="{{banner}}">
+          <swiper-item>
+            <!--<form  report-submit onSubmit="handleBanner" data-appId="{{item.appId}}" data-path="{{item.path}}" data-extraData="{{item.extraData}}" data-taskId="{{item.taskId}}" data-name="{{item.adName}}" data-linkType="{{item.linkType}}"><button class="form-btn" hover-class="none" form-type="submit"><image src="{{item.imageUrl}}" mode="scaleToFill" /></button></form> -->
+            <view onAppear="onNopAppear" data-group="广告banner" data-obj="{{item}}" data-seed="{{item.adName}}">
+              <image onTap="handleBannerJump" data-link="{{item.linkUrl}}" src="{{item.image}}" mode="scaleToFill" />
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="rights-exchange">
+      <view class="exchange-title">
+        步数兑好礼
+      </view>
+      <view class="picker-city">
+        <picker onChange="bindObjPickerChange" value="{{arrIndex}}" range="{{cityList}}" range-key="cityName" class="cityPickerList">
+          <view class="location-city">
+            <image src="https://images.allcitygo.com/20201027162227253608YQf.png" mode="scaleToFill" />
+            <view class="cityName">{{cityList[arrIndex].cityName}}</view>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view style="padding-bottom: 160rpx;">
+      <view class="modular" a:for="{{activity}}">
+        <view class="coupon-left">
+          <view class="first-line">
+            <image src="{{item.merchantLogo}}" mode="scaleToFill" />
+            <view style="width:344rpx;">{{item.merchantName}}</view>
+          </view>
+          <view class="second-line">
+          {{item.prizeName}}
+          </view>
+          <view class="third-line">
+          {{item.prizeSubtitle}}
+          </view>
+        </view>
+        <view class="coupon-right">
+          <view class="receive received" a:if="{{item.state == 2}}">已抢完</view>
+          <view class="receive received" a:elif="{{item.state == 1}}">已领取</view>
+          <view class="receive" a:else onTap="handleCode" data-seed="步数兑换" data-obj="{{item}}" data-id="{{item.id}}" data-step="{{item.step}}">{{item.step}}步兑换</view>
+        </view>
+      </view>
+      <view class="none-list" a:if="{{activity.length<=0}}">
+        <image mode="scaleToFill" src="https://images.allcitygo.com/20201030160552806L5MET0.png"/>
+        <view>
+        当前城市暂无可兑换好礼
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="flot-entrance" data-seed="我的卡券" onTap="handleZfbBag">
+    我的卡券
+  </view>
+  <view class="flot-entrance float-bottom" data-seed="兑换记录" onTap="handleRecord">
+    兑换记录
+  </view>
+  <tk-lifestyle publicId="2018052160219015"></tk-lifestyle>
+  <modal className="succ-pop" show="{{showPop}}" onMaskClick="onModalClose">
+    <view class="pop-title" onAppear="onNopAppear" data-group="弹框">
+      兑换成功
+    </view>
+    <view class="pop-prize coupon-bg" a:if="{{prizeType===1}}">
+      <view class="cou-left">
+        <view class="coupon-amt">
+          {{prizeName.split('元')[0]}}
+        </view>
+        <view class="coupon-yuan">
+          元
+        </view>
+      </view>
+      <view class="cou-right">
+        <view>
+          <view class="coupon-name">
+          {{prizeName.split('元')[1]}}
+          </view>
+          <view class="zddk">
+          自动抵扣
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="pop-prize prize-bg" a:else>
+      <image class="pop-merchantLogo" mode="scaleToFill" src="{{merchantLogo}}"/>
+      <view class="prize-name">
+        {{prizeName}}
+      </view>
+      <view onTap="handleJump" class="recieve-btn" data-group="弹框" data-seed="去领取">
+        去领取
+      </view>
+    </view>
+    <view class="bus-btn" onTap="goByBus" data-group="弹框" data-seed="去乘车">
+      去乘车
+    </view>
+    <image class="pop-close" onTap="onModalClose" mode="scaleToFill" src="../../images/close_pop.png"/>
+  </modal>
+</view>

@@ -1,0 +1,30 @@
+{
+  "extEnable": true,
+  "ext": {
+    "env": "sit",
+    "appId": "2021001199689135",
+    "title": "步数换权益",
+    "cityInfo": {
+      "cityName": "",
+      "cityCode": ""
+    },
+    "url": "https://render.alipay.com/p/c/tr-17fufu9ml4ow",
+    "pageJson": [
+      {
+        "regular": [
+          "sit"
+        ],
+        "pageUrl": "pages/step/index",
+        "locationId": "pages/step/index",
+        "locationName": "首页",
+        "templateId": "67"
+      },
+      {
+        "pageUrl": "pages/step/index",
+        "locationId": "pages/step/index",
+        "locationName": "首页",
+        "templateId": "18"
+      }
+    ]
+  }
+}

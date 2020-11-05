@@ -1,0 +1,80 @@
+.main{
+    background: #0080FF;
+    width: 100%;
+    min-height: 1680rpx;
+    overflow: hidden;
+}
+.content{
+    width: 686rpx;
+    height: 724rpx;
+    margin: 224rpx 32rpx 54rpx 32rpx;
+    background: #fff;
+    border-radius: 16rpx;
+}
+.top{
+    display: flex;
+    background: url("https://img-citytsm.oss-cn-hangzhou.aliyuncs.com/Step/top.png") no-repeat;
+    background-size: 100% 100%;
+    width: 686rpx;
+    height: 118rpx;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    color: #0080ff;
+}
+.logo{
+    width: 52rpx;
+    height: 52rpx;
+    border-radius:  52rpx;
+    margin-right: 16rpx;
+    display: block;
+}
+.rule{
+    margin: 0 90rpx 0 32rpx;
+    font-size: 30rpx;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    color: #ffffff
+}
+.qrcode{
+    width: 100%;
+    margin-top: 60rpx;
+}
+.qrcode image{
+    width: 445rpx;
+    height: 445rpx;
+    display: block;
+    margin: 0 auto;
+}
+.save{
+    width: 268rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    background: #abc4dc;
+    border-radius: 28rpx;
+    font-size: 26rpx;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.explain{
+    font-size: 30rpx;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 42rpx;
+}
+.rule-content{
+    font-size: 28rpx;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 42rpx;
+    margin-top: 22rpx;
+    margin-bottom: 80rpx
+}

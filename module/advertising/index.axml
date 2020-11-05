@@ -1,0 +1,10 @@
+   
+<view class="red-envelopes">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block a:for="{{advertising}}">
+      <swiper-item  >
+        <image onTap="onBtnItem" src="{{item.imgUrl}}" style="width:100%;height:181rpx;" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
